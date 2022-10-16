@@ -1,0 +1,627 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(2, 10, 17);
+}
+
+/* Mobile view */
+
+
+@media (max-width: 767px) {
+    .navLinks{
+        background-color: brown;
+        padding: 10px;
+        border-radius: 7px;
+        display: none;
+        border-bottom: 10px;
+    }
+
+    .navBar{
+        /* background-color: brown; */
+        margin-top: 0;
+
+    }
+
+    .logo{
+        color: brown;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .navBar ul a{
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(139, 21, 21);
+    border-radius: 16px;
+    border-top: 0.3px solid rgb(75, 62, 62);
+    padding: 5px;
+    text-align: center;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        color: rgb(136, 21, 21);
+    }
+
+    .burger{
+        font-size: 30px;
+        color: white;
+        display: block;
+    }
+
+    .hero{
+        background-image: url("./img/venomhero.jpeg");
+        background-size: cover;
+        padding: 3rem;
+        color: white;
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 25px;
+        color: rgb(210, 210, 210);
+        margin-bottom: 15px;
+    }
+
+    .hero button{
+        padding: 10px;
+        background-color: brown;
+        border: none;
+        border-radius: 7px;
+        color: #fff;
+        font-size: 18px;
+        margin-top: 15px;
+        margin: 10px;
+    }
+
+    button:last-child{
+    background-color: rgb(33, 4, 4);
+    color: #fff;
+    font-size: 20px;
+    }
+
+    .feature{
+        margin-top: 2rem;
+    }
+
+    .feature h2{
+        color: white;
+        margin-bottom: 1rem;
+        margin-left: 10px;
+        text-decoration: underline 2px solid brown;
+    }
+
+    .images img{
+    width: 350px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 14px;
+    margin-left: 7px;
+    margin: 10px;
+    }
+
+    /* select */
+    .buttons button{
+    padding: 7px;
+    background-color: rgba(145, 145, 145, 0.649);
+    border-radius: 5px;
+    margin: 7px;
+    border: none;
+    color: white;
+}
+
+.buttons button:nth-child(5){
+    background-color: brown;
+}
+
+.buttons button:nth-child(7){
+    background-color: brown;
+}
+
+.buttons button:nth-child(2){
+    background-color: brown;
+}
+
+.sort{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 10px;
+    color: white;
+}
+
+.sort select{
+    margin-left: 1rem;
+    padding: 10px;
+    background-color: rgba(145, 145, 145, 0.649);
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+
+.sort select:nth-child(3){
+    background-color: brown;
+}
+
+
+    .all-img img{
+    width: 300px;
+    margin: 0 auto;
+    margin-left: 1rem;
+    border-radius: 4px;
+}
+
+.heading{
+    color: white;
+    text-decoration: underline brown;
+    font-size: 17px;
+    margin: 10px 10px;
+    
+}
+
+.all{
+    background-color: rgb(225, 225, 225);
+    padding: 5px;
+    border-radius: 7px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-content strong{
+    color: brown;
+    margin-left: 10px;
+    margin: 17px;
+}
+
+.overview{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* top: 3; */
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.overview strong{
+    color: rgb(10, 65, 13);
+    font-weight: bold;
+    padding: 2px;
+}
+
+    .all:hover .overview{
+    transform: translateX(0%);
+    cursor: pointer;
+    }
+
+    .footer{
+        text-align: center;
+        margin: 10px;
+        margin-top: 2rem;
+        color: white;
+    }
+
+    .navLink a{
+    display: block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 3px;
+    text-decoration: none;
+    }
+
+    .footerLinks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navLink h3{
+        color: brown;
+        margin: 10px;
+        text-decoration: underline white;
+    }
+
+    .form p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.form input{
+    padding: 15px;
+    width: 200px;
+    border: 1px solid #d9830174;
+    border-radius: 5px;
+}
+
+.form button{
+    padding: 15px;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    width: 100px;
+    margin-top: 7px;
+}
+
+.form button:hover{
+    background-color: rgba(165, 11, 11, 0.828);
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    border: 1px solid white;
+}
+
+}
+
+
+
+@media (min-width: 768px)  {
+    .navBar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1225px;
+    margin-top: -8rem;
+    margin-left: -5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-nav{
+    background-image: url("../src/img/Venom.jpeg");
+    padding: 10rem;
+    backface-visibility: visible; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position-y:bottom; 
+}
+
+.navBar ul a{
+    margin: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(243, 243, 243);
+}
+.navBar ul a:hover{
+    color: rgb(87, 6, 6);
+    border-bottom: 1px solid white;
+    transition: all 0.5s ease-in-out;
+}
+
+.burger{
+    display: none;
+}
+
+.logo{
+    color: rgb(165, 11, 11);
+    font-size: 29px;
+    /* font-style: italic; */
+}
+
+.navBar button{
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(165, 11, 11);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+hr{
+    margin: 1rem;
+}
+
+/* Hero */
+
+.hero{
+    text-align: center;
+    margin-top: 3rem;
+    padding: 4rem;
+    color: white;
+}
+
+.hero-content p{
+    width: 400px;
+    margin-left: 22.5rem;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.button button{
+    padding: 15px;
+    width: 150px;
+    background-color: rgb(165, 11, 11);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:last-child{
+    background-color: rgb(33, 4, 4);
+    margin-left: 10px;
+}
+
+button:hover{
+    background-color: rgba(61, 3, 3, 0.828);
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    /* border: 1px solid white; */
+}
+
+
+
+
+
+.hero img{
+    width: 800px;
+    border-radius: 5px;
+    margin-top: 16px;
+    box-shadow: 1px -3px -3px 3px grey;
+}
+
+/* Feature */
+
+.feature{
+    max-width: 1225px;
+    width: 90vw;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature h2{
+    margin-left: 0.1rem;
+    padding: 10px;
+    text-decoration: underline brown;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.images img{
+    width: 270px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 14px;
+    margin: 7px;
+}
+
+.images img:hover{
+    background-color: rgb(165, 165, 165);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+
+.buttons button{
+    padding: 10px;
+    background-color: rgba(145, 145, 145, 0.649);
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    color: white;
+}
+
+.buttons button:nth-child(5){
+    background-color: brown;
+}
+
+.buttons button:nth-child(7){
+    background-color: brown;
+}
+
+.buttons button:nth-child(2){
+    background-color: brown;
+}
+
+.sort{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 10px;
+}
+
+.sort select{
+    margin-left: 2rem;
+    padding: 10px;
+    background-color: rgba(145, 145, 145, 0.649);
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+
+.sort select:nth-child(3){
+    background-color: brown;
+}
+
+
+small{
+    color: red;
+    font-style: italic;
+}
+/* ------ */
+
+.heading{
+    color: white;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    text-decoration: underline brown;
+}
+
+.all{
+    background-color: rgb(225, 225, 225);
+    padding: 10px;
+    border-radius: 7px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.all-img img{
+    width: 220px;
+    margin: 0 auto;
+    margin-left: 1rem;
+    border-radius: 4px;
+}
+
+.all:hover{
+    cursor: pointer;
+    background-color: rgb(165, 165, 165);
+}
+
+.movie-content{
+    width: 200px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+.movie-content strong{
+    color: brown;
+}
+
+.movie-content h5{
+    color: green;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90vw;
+    max-width: 1325px;
+    margin: 0 auto;
+}
+
+/* Overview */
+.overview{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* top: 3; */
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.overview strong{
+    color: rgb(10, 65, 13);
+    font-weight: bold;
+    padding: 2px;
+}
+
+.all:hover .overview{
+    transform: translateY(0%);
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-top: 7rem;
+    border-top: 1px solid grey;
+    padding: 4rem;
+    color: white;
+    
+}
+
+.footer h2{
+    color: brown;
+}
+
+.footer h3{
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.navLink{
+    margin-left: 1.5rem;
+    margin: 10px;
+    width: 100px;   
+}
+
+.navLink a{
+    display: block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.navLink a:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+.footer-logo p{
+    width: 400px;
+}
+
+.footerLinks{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.form p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.form input{
+    padding: 15px;
+    width: 250px;
+    border: 1px solid #d9830174;
+    border-radius: 5px;
+}
+
+.form button{
+    padding: 15px;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    width: 150px;
+    margin-top: 7px;
+}
+
+.form button:hover{
+    background-color: rgba(91, 4, 4, 0.828);
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+}
